@@ -1,0 +1,143 @@
+/* nav starts here */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    background-color:bisque;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+nav ul{
+    text-align: center;
+}
+nav ul li a{
+    color: rgb(146, 123, 123);
+    display: inline-block;
+    padding: 1px 1px;
+   transition: .3s;
+   position: relative;
+   z-index: 1;
+
+    }
+a{
+    text-decoration: none;
+}
+nav ul li a::after{
+    width:0%;
+    height: 100%;
+    position: absolute;
+    content: '';
+    background-color: rgb(11, 80, 184);
+    top:0;
+    right:0;
+    z-index: -1;
+    transition: .3s;
+    }
+    nav ul li a::before{
+        width:0%;
+        height: 100%;
+        position: absolute;
+        content: '';
+        background-color:  rgb(11, 80, 184);
+        top:0;
+        left:0;
+        z-index: -1;
+        transition: .3s;
+        }
+        nav ul li:hover a::after{
+            width: 50%;
+        }
+        nav ul li:hover a::before{
+            width: 50%;
+        }
+        /* nav ends here */
+        .post{
+            background-color:bisque;
+            height:600px;
+            padding: 2px;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+        }
+         .para{
+            margin:35px 0 0 15px;
+            font-size: 25px;
+
+         }
+         .head{
+            margin:15px 0 0 15px;
+            font-size: 35px;
+         }
+         
+         .head1{
+            text-align:right;
+            height: 10px;
+            margin-top: 18px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            }
+         .para1{
+            text-align: right;
+            height: 100px;
+            margin-top:60px;
+            position: absolute;
+            top: 0;
+            right:0;
+         } 
+         .head2{
+            text-align:right;
+            height: 300px;
+            margin-top: 90px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            }
+         .para2{
+            text-align: right;
+            height: 250px;
+            margin-top:130px;
+            position: absolute;
+            top: 0;
+            right:0;
+         } 
+         .head3{
+            text-align:right;
+            height: 500px;
+            margin-top: 150px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            }
+         .para3{
+            text-align: right;
+            height: 350px;
+            margin-top:190px;
+            padding: 2px;
+            position: absolute;
+            top: 0;
+            right:0;
+         }   
+         .head4{
+            height: 100px;
+            text-align: center;
+            margin-top: 90px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+         }
+         .para4{
+            height:200px;
+            text-align: center;
+            margin-top: auto 0 0 0;
+            font-size: 20px;
+         }
+        
